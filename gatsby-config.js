@@ -5,6 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetaData:{
+    title : 'Places',
+    description : 'Travel destinations at a go. Experience the magic of the world at your fingertips',
+    author : 'Karen Efereyan',
+    keywords : 'Travel, Travel Destinations, travel, tourists, tourist location'
+  },
   plugins: [],
 }
