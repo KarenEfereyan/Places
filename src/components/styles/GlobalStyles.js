@@ -1,11 +1,14 @@
-import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyles = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+const GlobalStyles = createGlobalStyle
+`
+*{
+    padding:0;
+    margin :0;
+    box-sizing : border-box;
 }
+
+
+`
 
 export default GlobalStyles

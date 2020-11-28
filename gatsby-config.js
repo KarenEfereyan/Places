@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  "siteMetaData":{
+  "siteMetadata":{
     title : 'Places',
     description : 'Travel destinations at a go. Experience the magic of the world at your fingertips',
     author : 'Karen Efereyan'

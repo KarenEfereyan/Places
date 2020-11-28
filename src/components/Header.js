@@ -40,6 +40,11 @@ color:#fff;
 
 @media only screen and (max-width: 768px){
     display : block;
-    position:absolute
+    position:absolute;
+    top:0;
+    right:0;
+    transform : translate(-100%, 75%);
+    font-weight: 1.75rem;
+    cursor : pointer;
 }
 `
