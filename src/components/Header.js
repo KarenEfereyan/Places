@@ -29,8 +29,8 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-background: blue;
-height:100px;
+${'' /* background: blue; */}
+height:80px;
 display:flex;
 justify-content:space-between;
 padding: 0.5rem calc((100vw -  1300px)/2);
