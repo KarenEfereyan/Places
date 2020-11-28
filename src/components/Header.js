@@ -3,6 +3,7 @@ import React from 'react'
 import {FaBars} from 'react-icons/fa'
 import styled from 'styled-components'
 import NavData from '../data/NavData';
+import {Button} from './Button';
 
 const Header = () => {
     return (
@@ -16,7 +17,12 @@ const Header = () => {
            </NavLink>
        ))}
        </NavMenu>
-       </Nav>
+       <NavBtn>
+       <Button big = "true" primary ="true" round ="true" to = "/trips">
+        Book a flight
+      </Button>
+    </NavBtn>
+    </Nav>
     )
 }
 
@@ -56,7 +62,6 @@ color:#fff;
     cursor : pointer;
 }
 `
-
 const NavMenu = styled.div`
 display:flex;
 align-items:center;
@@ -65,5 +70,14 @@ margin-right: - 40px;
 @media  screen and (max-width: 768px){
     display:none;
 }
+`
 
+const NavBtn = styled.div`
+display:flex;
+align-items:center;
+margin-right:24px;
+
+@media screen and (max-width:768px){
+    display:none
+}
 `
