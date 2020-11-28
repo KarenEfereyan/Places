@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const Header = () => {
     return (
        <Nav>
-       <NavBrand to = "/">Places</NavBrand>
+       <NavBrand to = "/">PLACES</NavBrand>
        <Bars />
        </Nav>
     )
@@ -44,7 +44,7 @@ color:#fff;
     top:0;
     right:0;
     transform : translate(-100%, 75%);
-    font-weight: 1.75rem;
+    font-size: 1.8rem;
     cursor : pointer;
 }
 `
