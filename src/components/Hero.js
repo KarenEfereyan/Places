@@ -31,6 +31,11 @@ height:100vh;
 padding: 0 1rem;
 position:relative;
 margin-top: -80px;
+
+:before{
+    content: '';
+    position: absolute
+}
 `
 const HeroBg = styled.div`
 position:absolute;
@@ -68,13 +73,13 @@ font-weight:bold;
 
 `
 const HeroHeading = styled.h1`
-font-size: clamp(1.5rem, 6vw, 4.2rem)
-margin-bottom:1.5rem;
+font-size: clamp(2rem, 6vw, 4rem) !important;
+margin-bottom: 1.5rem;
 font-weight:bold;
 padding: 0 1rem;
 `
 const HeroParagraph = styled.p`
-font-size: clamp(1rem, 4vw, 3rem)
-margin-bottom:2rem;
+font-size: clamp(1.5rem, 4vw, 3rem) !important;
+margin-bottom: 2rem;
 `
 export default Hero
