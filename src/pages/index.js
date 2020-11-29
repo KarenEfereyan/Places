@@ -2,6 +2,7 @@ import React from "react"
 import Header from '../components/Header'
 import Layout from '../components/layout';
 import Hero from '../components/Hero'
+import Trips from "../components/Trips";
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <Layout>
           <Header  />
           <Hero />
+          <Trips />
       </Layout>
   
   )
