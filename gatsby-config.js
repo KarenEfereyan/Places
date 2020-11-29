@@ -11,6 +11,22 @@ module.exports = {
     author : 'Karen Efereyan'
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/assets/videos`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
     {
     resolve: `gatsby-plugin-styled-components`,
     options: {
