@@ -1,0 +1,26 @@
+[
+    {
+        "img" : "../assets/images/travel-1.jpg",
+        "alt" : "Siargao island, Philippines",
+        "name" : "Siargo Island",
+        "button" : "View Destination"   
+    },
+    {
+        "img" : "../assets/images/travel-2.jpg",
+        "alt" : "Taryn Elliot",
+        "name" : "Taryn Elliot",
+        "button" : "View Destination" 
+    }, 
+    {
+        "img" : "../assets/images/travel-3.jpg",
+        "alt" : " Chefchaouen, Morocco",
+        "name" : "Chefchaouen, Morocco",
+        "button" : "View Destination"   
+    },
+    {
+        "img" : "../assets/images/travel-4.jpg",
+        "alt" : "Wahiba Sands, Oman",
+        "name" : "Wahiba Sands, Oman",
+        "button" : "View Destination"   
+    }
+]
