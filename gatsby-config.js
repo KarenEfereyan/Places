@@ -16,5 +16,14 @@ module.exports = {
     options: {
       // Add any options here
     },
-  },],
+  },
+  `gatsby-transformer-json`,
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `./src/data/`,
+    },
+  },
+    
+    ],
 }
