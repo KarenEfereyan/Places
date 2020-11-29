@@ -15,14 +15,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
+        name: `images`,
         path: `${__dirname}/src/assets/images`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
+        name: `videos`,
         path: `${__dirname}/src/assets/videos`,
         ignore: [`**/\.*`], // ignore files starting with a dot
       },

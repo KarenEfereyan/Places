@@ -1,14 +1,51 @@
 import React from 'react'
 import styled from 'styled-components';
+import { useStaticQuery, graphql } from "gatsby";
+import Img from 'gatsby-image';
 
 const Trips = () => {
+    
+    //Fetch Trips data from graphql
+    
+    const tripsData = useStaticQuery(graphql `
+      query TripQuery{
+        allTripsJson {
+            edges {
+                node {
+                    alt
+                    button
+                    name
+                    img {
+                    absolutePath
+                    }
+                 }
+              }
+            }    
+      }                           
+ `)
+    
+    function getTrips(tripsData){
+        const tripsArray = [];
+        tripsData.allTripsJson.edges.forEach((item, index) => {
+            tripsArray.push(
+                <div key = {index}>
+                    <Img src = {item.node.img.absolutePath}  />
+                </div>
+            )  
+        })
+        return tripsArray
+    }
+    
+    
     return (
        <ProductsContainer>
         <ProductsHeading>Heading</ProductsHeading>
-        <ProductWrapper>Wrapper</ProductWrapper>
+        <ProductWrapper>{getTrips(tripsData)}</ProductWrapper>
        </ProductsContainer>
     )
 }
+
+export default Trips
 
 const ProductsContainer = styled.div`
 min-height:100vh;
@@ -27,4 +64,4 @@ const ProductWrapper = styled.div`
 `
 
 
-export default Trips
+
