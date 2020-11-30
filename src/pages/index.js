@@ -10,7 +10,7 @@ export default function Home() {
     <Layout>
           <Header  />
           <Hero />
-          <Trips />
+          <Trips heading = "Our Favorite Destinations" />
       </Layout>
   
   )
