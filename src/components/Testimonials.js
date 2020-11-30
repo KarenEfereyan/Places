@@ -72,37 +72,39 @@ const Testimonials = () => {
 export default Testimonials
 
 const TestimonialsContainer = styled.div`
-width:100%;
-background:#fcfcfc;
-color:#000;
-padding: 5rem (calc(100vw = 1300px) / 2)
-height:100%;
+    width:100%;
+    background:#fcfcfc;
+    color:#000;
+    padding: 5rem (calc(100vw = 1300px) / 2)
+    height:100%;
 `
-const Topline = styled.div`
-color:#077bf1;
-font-size:1rem;
-padding-left:2rem;
-margin-bottom:0.75rem;
+const Topline = styled.p`
+    color:#077bf1;
+    font-size:clamp(1.1rem, 3.1vw, 1.5rem);
+    padding-left:2.5rem;
+    margin-bottom:0.75rem;
 `
-const Description = styled.div`
-text-align:start;
-padding-left: 2rem;
-margin-bottom: 4rem;
-font-size:clamp(1.5rem, 5vw, 2rem);
-font-weight:bold;
+const Description = styled.h1`
+    text-align:start;
+    opacity: .7;
+    padding-left: 2.5rem;
+    margin-bottom: 3rem;
+    font-size:clamp(1.5rem, 5vw, 2rem);
+    font-weight:bold;
 `
 const ContentWrapper = styled.div`
-display:grid;
-grid-template-columns: 1fr 1fr;
-padding: 0 2rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
 
 @media screen and (max-width:768px){
     grid-template-columns: 1fr;
 }
 `
 const ColumnOne = styled.div`
-display:grid;
-grid-template-rows: 1fr 1fr;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-right:1rem;
 `
 const Testimonial = styled.div`
     padding-top:1rem;
@@ -112,10 +114,15 @@ h3{
     margin-bottom:1rem;
     font-size:1.5rem;
     font-style:italic;
+    color:#000;
+    opacity:.75;
+    
 }
 
 p{
-    color:#3b3b3b;
+    color:#c9c9c9;
+    font-size:clamp(0.75rem, 3.5vw, 1rem);
+    line-height:1.55;
 }
 `
 const ColumnTwo = styled.div`
