@@ -1,34 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import {GiEarthAmerica} from 'react-icons/gi';
-import {MdAirplanemodeActive, MdTimer} from 'react-icons/md';
-import {FaMoneyCheck} from 'react-icons/fa';
+import statsData  from '../data/StatsData';
 
 
-const statsData = [
-    {
-        icon : (<GiEarthAmerica css = {`color : #047bf1`} />),
-        title : "Over 100 Destinations",
-        desc : "Travel to over 100 unique places"
-    },
-    {
-        icon : (<MdAirplanemodeActive  css = {`color : #f3a82e`} />),
-        title : "1 Million Trips Made",
-        desc : "Over 1 million trips completed last year"
-    },
-    {
-        icon : (<MdTimer  css = {`color : #f34f2e`} />),
-        title : "Fastest Support",
-        desc : "Access to 24/7 Customer Support"
-    },
-    {
-        icon : (<FaMoneyCheck  css = {`color : #3af576`} />),
-        title : "Best Deals",
-        desc : "We offer the best prices"
-    }
-]
-
-export const Stats = ({heading}) => {
+ const Stats = ({heading}) => {
+     console.log(statsData);
     return (
        <StatsContainer>
         <Heading>
@@ -97,6 +73,7 @@ margin-bottom:1rem;
 
 const Description = styled.p`
 font-size: clamp(.8rem, 2.2vw, 1.25rem);
+opacity:.8;
 `
 
 
