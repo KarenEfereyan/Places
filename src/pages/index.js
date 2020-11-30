@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import Hero from '../components/Hero'
 import Trips from "../components/Trips";
 import Testimonials from '../components/Testimonials';
+import Stats from '../components/Stats';
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
           <Hero />
           <Trips heading = "Our Favorite Destinations" />
           <Testimonials />
+          <Stats heading = "Why Choose Us?" />
       </Layout>
   
   )
