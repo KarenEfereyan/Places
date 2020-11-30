@@ -8,33 +8,31 @@ const Cta = () => {
       <CtaContainer>
         <CtaContent>
             <h1>Get Access to Exclusive Offers</h1>
-            <p>Sign Up for your newsletter below to get $100 off of your first trip </p>
+            <p>Sign Up for our newsletter below to get $100 off of your first trip </p>
             <form action = "#">
-            <FormWrap>
-            <label htmlFor = "email" >
-                    <input type = "email" placeholder = "Enter your email" id = "email" />
-                </label>   
-                <Button 
-                as = "button"
-                 type="submit" 
-                 primary = "true" 
-                 round = "true"
-                css = {`
-                       height:48px;
-                    
-                       @media screen and (max-width:768px){
-                           width:100%;
-                           margin-bottom:2rem;
-                           min-width:350px;
-                         
-                       }
-                       
-                       @media screen and (max-width:400px){
-                           width:100%;
-                           min-width:250px;
-                       }
-                       `}>Sign Up</Button>
-            </FormWrap>  
+                <FormWrap>
+                    <label htmlFor = "email" >
+                        <input type = "email" placeholder = "Enter your email" id = "email" />
+                    </label>   
+                    <Button 
+                    as = "button"
+                    type="submit" 
+                    primary = "true" 
+                    round = "true"
+                    css = {` height:48px;
+                           
+                        @media screen and (max-width:768px){
+                            width:100%;
+                            min-width:350px; 
+                            margin-top:2rem
+                        }
+                        
+                        @media screen and (max-width:400px){
+                            width:100%;
+                            min-width:350px;
+                        }
+                    `}>Sign Up</Button>
+                </FormWrap>  
             </form>
         </CtaContent>
       </CtaContainer>
@@ -61,35 +59,34 @@ const CtaContainer = styled.div`
 `
 
 const CtaContent = styled.div`
-display:flex;
-flex-direction:column;
-align-items:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 
-h1{
-    text-align:center;
-    margin-bottom: 1rem;
-    font-size:clamp(1rem, 5vw, 3rem);
-}
-p{
-    text-align:center;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    padding: 0 1rem;
-    margin-bottom: 2rem;
-}
-
-form{
-    z-index:10;
-}
+    h1{
+        text-align:center;
+        margin-bottom: 1rem;
+        font-size:clamp(1rem, 5vw, 3rem);
+    }
+    p{
+        text-align:center;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+    form{
+        z-index:10;
+    }
 `
 const FormWrap = styled.div`
-input{
-    padding: 1rem 1.5rem;
-    outline : none;
-    width: 350px;
-    height: 48px;
-    border-radius: 50px;
-    border:none;
-    margin-right: 1rem;
+    input{
+        padding: 1rem 1.5rem;
+        outline : none;
+        width: 350px;
+        height: 48px;
+        border-radius: 50px;
+        border:none;
+        margin-right: 1rem;
     
     @media screen and (max-width:768px){
         display: flex;
