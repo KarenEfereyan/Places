@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CtaBg from '../assets/images/travel-3.jpg'
+import CtaBg from '../assets/images/cta.jpg'
 import { Button } from './Button';
 
 const Cta = () => {
